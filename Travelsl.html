@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Travel Sri Lanka</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+      }
+      table,
+      th,
+      td {
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+      th {
+        background-color: #e3d7cc;
+      }
+      .form-card{
+        border:2px solid black;
+        border-radius:20px;
+        padding:30px 40px;
+        width:320px;
+        background-color: white;
+      }
+      .form-card h2{
+        text-align:center;
+        margin-top:0;
+      }
+      .form-card{
+        text-align:left;
+        line-height:1;
+      }
+      label{
+        display:block;
+        font-weight:bold;
+        margin-top:10px;
+        margin-bottom:8px;
+      }
+      input[type="text"], select {
+        width:100%;
+        padding:8px;
+        border: 1px solid black;
+        border-radius:5px;
+        box-sizing:border-box;
+      }
+      button{
+        display:block;
+        margin:25px auto;
+        border: none;
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color:#256428;
+      }
+    </style>
+  </head>
+  <body bgcolor="#d6bd9c">
+    <h1 style="color: brown">Explore Sri Lanka</h1>
+    <p>
+      From a thrilling safari adventure in the depths of Yala, to a soothing
+      yoga session among tea brushes in the cool countryside,Sri Lanka has a
+      special experience for every traveller.So dive in,your adventure awaits!
+    </p>
+    <p>
+      Sri Lanka is an island nation located in the Indian Ocean, just off the
+      southeastern coast of India. Despite its modest size—slightly larger than
+      the state of West Virginia—Sri Lanka has a population of about 20 million
+      people, almost equal to the population of Texas. The island is rich in
+      natural resources, and has a diverse economy based on agriculture, mining,
+      fishing, manufacturing, and tourism. On becoming an independent nation in
+      1948 Sri Lanka (formerly called Ceylon) seemed to be headed for a future
+      as a stable and prosperous democracy. Since the 1970s, however, the
+      country has been torn by violent struggles between the two main ethnic
+      groups, Sinhalese and Tamils, that make up its population. Sri Lanka
+      suffered severe damage and loss of life from the tsunami of 2004; what
+      effect that disaster will have on the country’s political future remains
+      to be seen.
+    </p>
+<br>
+  <table style="width: 75%">
+    <tr>
+      <th colspan="4">Travel Packages</th>
+    </tr>
+    <tr>
+      <th><b>Destination</b></th>
+      <th>Activities</th>
+      <th>Duration</th>
+      <th>Price</th>
+    </tr>
+    <tr rowspan="2">
+      <td rowspan = "2">Ella</td>
+      <td>Hiking</td>
+      <td>2 days</td>
+      <td>$150</td>
+      <tr>
+        <td>Train rides</td>
+        <td>1 day</td>
+        <td>$80</td>
+      </tr>
+      <tr rowspan = "2">
+        <td rowspan = "2">Yala</td>
+        <td>Wildlife safari</td>
+        <td>1 day</td>
+        <td>$120</td>
+        <tr>
+            <td>camping</td>
+            <td>2 days</td>
+            <td>$200</td>
+        </tr>
+      </tr>
+      
+    </tr>
+  </table>
+  <br>
+<div class = "form-card">
+    <h2>Book your trip</h2>
+    
+    <label for = "name">Name: </label>
+    <input type = "text" id = "name" placeholder = "enter your name">
+    
+
+    <label>Travel Type:</label>
+    <div class = "radio-group">
+    <label><input type = "radio" name = "traveltype" >Solo</label>
+    <label><input type = "radio" name = "traveltype" />family</label>
+    <label><input type = "radio" name = "traveltype" />group</label>
+    </div>
+<br>   
+
+<label>Preferred activities: </label>
+<div class = "checkbox-group">
+    <label><input type = "checkbox">Hiking</label>
+    <label><input type = "checkbox">Swimming</label>
+    <label><input type = "checkbox">wildlife safari</label>
+    <label><input type = "checkbox">cultural tours</label>
+</div>
+<br>
+<label for = "country">Select country:</label>
+<select id = "country">
+    <option value = "">Select country</option>
+    <option value = "Srilanka">Sri Lanka</option>
+    <option value = "india">India</option>
+    <option value = "usa">USA</option>
+    </select>
+<br>
+    <button type = "submit">Submit</button>
+</div>
+
+  </body>
+</html>
